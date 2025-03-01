@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
 
-  <head><!-- where all the meta data will go, like and files we need to include -->
-    <title>My Little Rainbow</title><!-- the title is what appears on your tab -->
-  </head>
+        .rainbow {
+            width: 300px;
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+        }
 
-  <body><!-- the body element is where everything we will see on the page will go -->
-
-    <!-- our soon to be beautiful rainbow! -->
-    <div> <!-- the grandest grandparent div -->
-      <div>
-        <div>
-          <div>
-            <div>
-              <div>
-                <div></div> <!-- the grandest child div -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        .rainbow div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 15px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow">
+        <div id="red"></div>
+        <div id="orange"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+        <div id="indigo"></div>
+        <div id="violet"></div>
     </div>
-
-  </body>
-
+</body>
 </html>
